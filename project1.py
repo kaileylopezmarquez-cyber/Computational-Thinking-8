@@ -1,0 +1,20 @@
+print("Hello would you like to hear a story? if so press enter")
+input()
+print("Im going to ask you questions if order for you to fill in the blanks")
+user_animal=input("Pick an animal:")
+setting=input("choose a setting:")
+user_food=input("Choose a food:")
+user_friend=input("Name a character:")
+print("Press enter to hear your story!!!")
+input()
+print(f"Today a {user_animal} goes to a restaurant to eat {user_food},with their best friend {user_friend}.")
+print("The end!!!!!!!!")
+str(print("if you would like to give me feedback press enter"))
+input()
+user_opinion=input("Did you like the story I made??? y/n")
+if user_opinion:"y"
+print("Im so glad you enjoyed it!")
+else:
+print("Im sorry you didn't like my sorry")
+print("Thank you for your time")
+

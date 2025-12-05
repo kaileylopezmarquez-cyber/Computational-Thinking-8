@@ -27,4 +27,8 @@ print("\n\n")
                                                                                           
                                   
 print("Now it's your turn:")
-print("Find this line (line 30) in the welcome_to_ct8.py file, then change the message to say a fact about you.")                                  
+print("A fact about me is I have a dog named canela which means cinnnamon in spanish.")      
+print('Another fact about me is I love when the temperature is cold because I get to wear sweaters and hoodies.')  
+print('I liked pizza as a child but I have grown to not like it')      
+Favfood=input(print('What is your favorite food?'))            
+print("I love"Favfood"too")
