@@ -10,7 +10,7 @@ y2 =50
 x3 =-500
 y3 =-100
 x4 =-500
-y4 =-250
+y4 =-150
 
 
 # Section 2 - Setup
@@ -26,7 +26,7 @@ time.sleep(5)
 # # # TODO - set how much each variable changes by and increase the number of repeats to at least 30
 # # TODO - Here there is a for loop, this code will repeat 10 times 
 # The numbers show by how much each sprite will go toward in the x axis
-# In this example the fastest sprite will be 4 beacuse it has the largest increases
+# In this example the fastest sprite will be 4 because it has the largest increases
 for i in range(10):
     x1 +=20
     x2 +=40
@@ -40,6 +40,16 @@ for i in range(10):
 
     window.update()
     time.sleep(1)
+    # If a sprite reaches 300 on the X axis it will stop the competition and automaticly win
+    if x1 > 300:
+        break
+    if x2 > 300:
+        break
+    if x3 > 300:
+        break
+    if x4 > 300:
+        break
+    
 
 
 # # Section 4 - Winner
@@ -47,14 +57,15 @@ for i in range(10):
 # # TODO - write another elif for player 3 and player 4
 if x1 >= x2 and x1 >= x3 and x1 >= x4:
     print("Red Car Wins!")
-if x2 >= x1 and x1 >= x3 and x1 >= x4:
+if x2 >= x1 and x2 >= x3 and x2 >= x4:
     print("Yellow Car Wins!")
-if x3 >= x1 and x1 >= x2 and x1 >= x4:
+if x3 >= x1 and x3 >= x2 and x3 >= x4:
     print("Blue Car wins!")
-if x4 >= x1 and x1 >= x2 and x1 >= x3:
+if x4 >= x1 and x4 >= x2 and x4 >= x3:
     print("Basketball Wins!")
 else :
-    print("nobody wins")    
+    print("nobody wins")   
+
 
 
 

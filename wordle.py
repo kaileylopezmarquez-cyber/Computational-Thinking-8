@@ -11,7 +11,7 @@ for i in range(6):
     # Guess a word
     guess_word = input()
     output = ""
-if len(guess_word)>
+# if len(guess_word)>
     # First letter (in python, counting starts at 0 not 1)
     if guess_word[0] == hidden_word[0]:
         output += "🟩"
