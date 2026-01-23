@@ -48,7 +48,16 @@ if answer4 == "A":
     animal_bird+= 1
 elif answer4 == "B":
     animal_fish += 1
-elif answer4 == "C"or"B":
+elif answer4 == "C" or answer4=="B":
+    animal_bear += 1
+answer5 = input("Whats your favorite animal? A:Cheetah B:Fish C:Bird D:Bird (Answer in uppercase): ")
+if answer5 == "A":
+    animal_cheetah += 1
+elif answer5 == "B":
+    animal_fish += 1
+elif answer5 == "C":
+    animal_bird+= 1
+elif answer5 == "D":
     animal_bear += 1
 if animal_cheetah >= animal_bird and animal_cheetah >= animal_fish and animal_cheetah>=animal_bear:
         print("Your spirit animal is a cheetah!")
